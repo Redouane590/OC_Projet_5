@@ -1,0 +1,35 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  font-size: 24px;
+  font-weight: 500;
+  color: #FF6060;
+  width: 20%;
+  justify-content: space-between;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+// nav a.active {
+//   text-decoration: underline #FF6060 solid;
+// }
+.link {
+  color: #FF6060;
+}
+
+.link:hover {
+  /* Styles pour l'état hover */
+  text-decoration: underline;
+}
+
+
+.active {
+  text-decoration: underline #60ddff solid !important;
+}
+
