@@ -3,7 +3,7 @@ import styles from './Header.module.scss'
  
 function Header() {
     return (
-        <div className={styles.navbar}>
+        <header className={styles.navbar}>
             <div>
                 <img src='LOGO.jpg' alt='Logo Kasa' />
             </div>
@@ -12,7 +12,7 @@ function Header() {
                 <NavLink className={styles.link} activeClassName={styles.active} to="/">Accueil</NavLink>
                 <NavLink className={styles.link} activeClassName={styles.active} to="/about">A propos</NavLink>
             </nav>
-        </div>
+        </header>
     )
 }
 
