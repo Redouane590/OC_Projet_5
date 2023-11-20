@@ -9,8 +9,8 @@ function Header() {
             </div>
 
             <nav>
-                <NavLink className={styles.link} activeClassName={styles.active} to="/">Accueil</NavLink>
-                <NavLink className={styles.link} activeClassName={styles.active} to="/about">A propos</NavLink>
+                <NavLink className={`${styles.link} ${styles.active}`} to="/">Accueil</NavLink>
+                <NavLink className={`${styles.link} ${styles.active}`} to="/about">A propos</NavLink>
             </nav>
         </header>
     )

@@ -7,9 +7,9 @@ function Floats() {
     return (
         <div className={styles.grid} >
           {console.log(data)}
-          {data.map((apartment) => (
-        <Card key={apartment.id} title={apartment.title} cover={apartment.cover}/>
-      ))}
+          {data.map((appartment) => (
+            <Card key={appartment.id} appartment={appartment} />
+          ))}
           {/* <Card title="Titre de la location" />
           <Card title="Titre de la location" />
           <Card title="Titre de la location" />
