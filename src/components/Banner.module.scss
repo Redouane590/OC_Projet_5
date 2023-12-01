@@ -1,0 +1,15 @@
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../public/banner.jpg");
+  background-position: center center;
+  height: 250px;
+  border-radius: 25px;
+}
+
+.titleBanner {
+  color: white;
+  font-size: 48px;
+  font-weight: 500;
+}
