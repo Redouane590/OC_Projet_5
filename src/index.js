@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import Header from './components/Header';
+import Page404 from './pages/Page404';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -13,8 +14,10 @@ root.render(
     <Router>
     <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home />} errorElement={<Page404 />}/>
         <Route path="/about" element={<About />} />
+        {/* <Route path='/404' element={<Page404 />} /> */}
+        <Route path="*" element={<Page404 />} />
       </Routes>
     </Router>
   </React.StrictMode>
