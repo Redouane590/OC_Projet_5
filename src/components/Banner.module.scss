@@ -2,10 +2,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../public/banner.jpg");
+  // background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
   background-position: center center;
   height: 250px;
   border-radius: 25px;
+  background-size: cover;
 }
 
 .titleBanner {
