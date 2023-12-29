@@ -5,8 +5,8 @@
   width: 100%;
   padding-top: 10px; 
   padding-bottom: 10px; 
-  padding-left: 15px; 
-  padding-right: 20px;
+  // padding-left: 15px; 
+  // padding-right: 20px;
   font-size: 24px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
@@ -27,8 +27,8 @@
   background-color: #F6F6F6;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 15px;
-  padding-right: 20px;
+  // padding-left: 15px;
+  // padding-right: 20px;
   width: 100%;
   border-radius: 5px;
   margin-top: -5px;
@@ -46,4 +46,17 @@
   justify-content: center;
   margin-top: 20px;
   width: 80%;
+}
+
+.spanCollapse {
+  padding-left: 15px;
+}
+
+.arrowCollapse {
+  padding-right: 20px;
+}
+
+.contentPadding {
+  padding-left: 15px;
+  padding-right: 20px;
 }
