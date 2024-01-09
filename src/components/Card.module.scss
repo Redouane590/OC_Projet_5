@@ -8,9 +8,19 @@
   margin: 25px;
   span {
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: 15px;
+    left: 15px;
     margin: 10px;
     color: white;
+    width: 156px;
+    font-weight: bold;
   }
+}
+
+@media screen and (max-width: 980px) {
+  .card {
+    height: 255px;
+    width: 335px;
+  }
+  
 }

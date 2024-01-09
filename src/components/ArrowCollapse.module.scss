@@ -1,0 +1,9 @@
+.arrColl > img {
+  @media (max-width: 600px) {
+    content: url('../images/Vector-sm.png');
+  }
+
+  @media (min-width: 601px) {
+    content: url('../images/flechecollapse.png');
+  }
+}

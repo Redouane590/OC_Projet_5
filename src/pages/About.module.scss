@@ -3,4 +3,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 980px) {
+  .collapseBox > div {
+    width: 100%;
+  }
+
 }

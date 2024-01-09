@@ -7,6 +7,8 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Header from './components/Header';
 import Page404 from './pages/Page404';
+import Float from './pages/Float';
+import Footer from './components/Footer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -16,9 +18,10 @@ root.render(
       <Routes>
         <Route path="/" element={<Home />} errorElement={<Page404 />}/>
         <Route path="/about" element={<About />} />
-        {/* <Route path='/404' element={<Page404 />} /> */}
+        <Route path="/float/:id" element={<Float />}/>
         <Route path="*" element={<Page404 />} />
       </Routes>
+      <Footer />
     </Router>
   </React.StrictMode>
 );

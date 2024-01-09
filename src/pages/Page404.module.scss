@@ -8,7 +8,6 @@
 
 .title {
   font-size: 288px;
-  // font-family: Montserrat;
   font-weight: 700;
   color: #FF6060;
 }
@@ -25,5 +24,23 @@
   text-decoration: underline;
   &:hover {
     cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .pageError {
+    height: 60vh;
+  }
+  .title {
+    font-size: 144px;
+  }
+  
+  .notfound {
+    font-size: 24px;
+    width: 300px;
+  }
+  
+  .link {
+    font-size: 12px;
   }
 }

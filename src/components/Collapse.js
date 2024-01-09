@@ -13,10 +13,10 @@ function Collapse(props) {
     return (
         <div className={styles.collapseParent}>
             <div className={styles.collapse} onClick={handleToggleCollapse}>
-                <span>{props.title}</span>
-                <ArrowCollapse rotate={isContentVisible ? 180 : 0} />
+                <span className={styles.spanCollapse}>{props.title}</span>
+                <div className={styles.arrowCollapse}><ArrowCollapse rotate={isContentVisible ? 180 : 0} /></div>
             </div>
-            <div className={`${styles.content} ${isContentVisible ? styles.contentVisible : ''}`}>{props.content}</div>
+            <div className={`${styles.content} ${isContentVisible ? styles.contentVisible : ''}`}><div className={styles.contentPadding}>{props.content}</div></div>
         </div>
     )
 }
