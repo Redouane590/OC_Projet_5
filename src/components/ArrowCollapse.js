@@ -1,8 +1,9 @@
 import arrow from '../images/flechecollapse.png'
+import styles from './ArrowCollapse.module.scss'
 
 function ArrowCollapse({rotate}) {
   return (
-    <div style={{ transform: `rotate(${rotate}deg)`, transition: 'transform 0.3s ease'}}>
+    <div className={styles.arrColl} style={{ transform: `rotate(${rotate}deg)`, transition: 'transform 0.3s ease'}}>
       <img src={arrow} alt="Description de l'image" />
     </div>
   );

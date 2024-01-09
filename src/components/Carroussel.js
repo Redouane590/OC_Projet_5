@@ -18,9 +18,9 @@ const Carroussel = ({ images }) => {
   return (
     <section className={styles.carroussel}>
       
-      <button onClick={nextSlide} className={styles.buttonRight}><i class="fa-solid fa-chevron-right"></i></button>
+      <button onClick={nextSlide} className={styles.buttonRight}><i className="fa-solid fa-chevron-right"></i></button>
       
-      <button onClick={previousSlide} className={styles.buttonLeft}><i class="fa-solid fa-chevron-left"></i></button>
+      <button onClick={previousSlide} className={styles.buttonLeft}><i className="fa-solid fa-chevron-left"></i></button>
       
       {images.map((image, index) => {
         return (
