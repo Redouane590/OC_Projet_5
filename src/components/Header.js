@@ -10,8 +10,12 @@ function Header() {
             </div>
 
             <nav>
-                <NavLink className={`${styles.link} ${styles.active}`} to="/">Accueil</NavLink>
-                <NavLink className={`${styles.link} ${styles.active}`} to="/about">A propos</NavLink>
+                <NavLink className={`${styles.link}`}  to="/" style={({ isActive }) => {
+                    return {textDecorationLine: isActive ? "underline" : ""};
+                }}>Accueil</NavLink>
+                <NavLink className={`${styles.link}`}  to="/about" style={({ isActive }) => {
+                    return {textDecorationLine: isActive ? "underline" : ""};
+                }}>A propos</NavLink>
             </nav>
         </header>
     )

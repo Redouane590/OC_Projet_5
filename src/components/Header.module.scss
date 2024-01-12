@@ -19,16 +19,17 @@ a {
   text-decoration: none;
 }
 
+
+
 .link {
   color: #FF6060;
+  &.active {
+    text-decoration: underline;
+  }
 }
 
-.link:hover {
-  text-decoration: underline;
-}
 
-
-.link.active {
+a.active {
   text-decoration: underline;
 }
 
@@ -49,5 +50,6 @@ a {
     font-size: 12px;
     width: 140px;
     justify-content: space-around;
+    text-transform: uppercase;
   }
 }
