@@ -17,11 +17,13 @@ const Carroussel = ({ images }) => {
 
   return (
     <section className={styles.carroussel}>
-      
-      <button onClick={nextSlide} className={styles.buttonRight}><i className="fa-solid fa-chevron-right"></i></button>
-      
-      <button onClick={previousSlide} className={styles.buttonLeft}><i className="fa-solid fa-chevron-left"></i></button>
-      
+      {length > 1 && (
+        <>
+          <button onClick={nextSlide} className={styles.buttonRight}><i className="fa-solid fa-chevron-right"></i></button>
+          <button onClick={previousSlide} className={styles.buttonLeft}><i className="fa-solid fa-chevron-left"></i></button>
+          <div className={styles.counter}>{current + 1}/{length}</div>
+        </>
+      )}
       {images.map((image, index) => {
         return (
           <div
